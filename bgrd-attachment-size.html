@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Backgound-attachment-size</title>
+		<style>
+			#fixed{
+				background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qo8iah7CIfy_izgPOM1kmbKK1xf013caDg&usqp=CAU");
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+				background-size:contain;
+			}
+			#scroll{
+				background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qo8iah7CIfy_izgPOM1kmbKK1xf013caDg&usqp=CAU");
+				background-attachment:scroll;
+				background-repeat:no-repeat;
+				background-size:cover;
+			}
+			section{
+				display:flex;
+				height:1200px;
+			}
+			section div{
+				flex:1;
+				border:2px solid red;
+				padding:10px;
+				height:1200px;
+				margin:20px;
+			}
+			#fixed p{
+				font-size:20px;
+				width:30%;
+				background-attachment:fixed;
+				height:50px;
+				text-align:center;
+				color:red;
+				background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdt39lK41LUXe8Gx0TvanhgHLFN7Dj6Bsd7g&usqp=CAU");
+			}
+			#scroll p{
+				font-size:20px;
+				width:30%;
+				background-attachment:scrollj ;
+				height:50px;
+				text-align:center;
+				color:red;
+				background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdt39lK41LUXe8Gx0TvanhgHLFN7Dj6Bsd7g&usqp=CAU");
+			}
+				
+		</style>
+	</head>
+	<body>
+		<section>
+			<div id="fixed">
+				<p>Backgound-attachment-size:fixed-contain</p>
+			
+			</div>
+			<div id="scroll">
+				<p>Backgound-attachment-size:scroll-cover</p>
+			</div>
+		</section>
+	</body>
+</html>
