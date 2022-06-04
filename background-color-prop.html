@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Background-Color-Properties</title>
+		<style>
+				#nav{grid-area:nav;}
+				#header{grid-area:header;}
+				#article{grid-area:article;}
+				#ads{grid-area:ads;}
+				#footer{grid-area:footer}
+			section{
+				display:grid;
+				grid-template-areas:
+				'nav header'
+				'nav article'
+				'nav ads'
+				'nav footer';
+				grid-gap:10px;
+				height:80vh;
+				grid-template-rows:80px 1fr 70px 70px;
+				grid-template-columns:20% 1fr;
+				margin:0;
+			}
+			section div{
+				padding:1.2em;
+				border:2px solid red;
+			}
+			#nav{
+				background-color:pink;
+			}
+			#header{
+				background:radial-gradient(pink,yellow,green);
+			}
+			#article{
+				background-image:linear-gradient(#236583,#ce4fe4,#34c7b9);
+			}
+			#ads{
+				background-color:hsl(265,71%,84%);
+			}
+			#footer{
+				background-color:hsla(340,59%,50%,1);
+			}
+			ul li{
+				list-style-type:none;
+				padding:20px;
+				margin-bottom:50px;
+			}
+			li a{
+				text-decoration:none;
+				font-size:large;
+			}
+			ul li:nth-child(1){
+				background-color:orange;
+			}
+			ul li:nth-child(2){
+				background-color: #74992e;
+			}
+			ul li:nth-child(3){
+				background-color: rgb(255, 255, 128);
+			}
+			ul li:nth-child(4){
+				background-color: rgba(255, 255, 128, .5);
+			}
+			ul li:nth-child(5){
+				background-color: hsla(50, 33%, 25%, .75);
+			}
+			a:hover{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div id="nav">
+				<ul>
+					<li><a href="#"/>predefined-color:orange</a></li>
+					<li><a href="#"/>Hexadecimal:#74992e</a></li>
+					<li><a href="#"/>rgb(255, 255, 128)</a></li>
+					<li><a href="#"/>rgba(255, 255, 128, .5)</a></li>
+					<li><a href="#"/>hsla(50, 33%, 25%, .75)</a></li>
+				</ul>
+			</div>
+			<div id="header">Header</div>
+			<div id="article">Article</div>
+			<div id="ads">Ads</div>
+			<div id="footer">Footer</div>
+		</section>
+	</body>
+</html>
